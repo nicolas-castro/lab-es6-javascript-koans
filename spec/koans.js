@@ -89,8 +89,9 @@ describe('`string.includes()` finds string within another string. ', () => {
       expect('xyz'.includes(searchString)).toBe(true);
     });
     it('reports false if character was not found', function() {
-      const expected = "xyz";
-      //expect('xyz'.includes('abc')).toBe(expected);
+      let expected = "xyz";
+      
+      expect('xyz'.includes('abc')).toBe(expected);
     });
   });
 
